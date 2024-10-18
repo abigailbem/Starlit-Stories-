@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+    <section id="invoice-section">
+        <div class="invoice-box">
+            <h1>Invoice</h1>
+
+            <div id="invoice-details">
+                <p id="invoice-subtotal">Subtotal: $0.00 JMD</p>
+                <p id="invoice-tax">Tax (15%): $0.00 JMD</p>
+                <p id="invoice-total">Total: $0.00 JMD</p>
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="invoice-body">
+                    <!-- Invoice items will be inserted here dynamically -->
+                </tbody>
+            </table>
+
+            <div class="invoice-buttons">
+                <button id="confirm-btn">Confirm Order</button> <!-- Confirm Order Button -->
+                <button id="cancel-btn">Cancel Order</button>
+                <button id="exit-btn">Exit</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="invoice.js"></script>
+</body>
+</html>
+
